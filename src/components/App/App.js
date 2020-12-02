@@ -43,16 +43,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-             <Header/> 
-             
-             <GuestForm/>
-
-             <GuestList/>
-             
-             <DinnerSupplies/>
-             
-             <Footer/> 
-
+        <div>
+          <Header />
+          <h2>Party Leader</h2>
+          {this.state.guestList[0] &&
+            <h3>{this.state.guestList[0].name}</h3>
+          }
+          <GuestForm
+            newGuest={this.state.newGuest}
+            handleChangeFor={this.handleChangeFor}
+            handleSubmit={this.handleSubmit}
+          />
+          <GuestList guests={this.state.guestList} />
+          <DinnerSupplies count={this.state.guestList.length} />
+          <Footer />
+        </div>
         <header>
           <h1>Prim Proper Props</h1>
         </header>
