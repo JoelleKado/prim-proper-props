@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+import Header from '../Header/Header.js'
+import Footer from '../Footer/Footer.js'
+import GuestList from '../GuestList/GuestList.js'
+import DinnerSupplies from '../DinnerSupplies/DinnerSupplies.js'
+import GuestForm from '../GuestForm/GuestForm';
+
 
 class App extends Component {
   state = {
@@ -37,6 +43,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+             <Header/> 
+             
+             <GuestForm/>
+
+             <GuestList/>
+             
+             <DinnerSupplies/>
+             
+             <Footer/> 
+
         <header>
           <h1>Prim Proper Props</h1>
         </header>
