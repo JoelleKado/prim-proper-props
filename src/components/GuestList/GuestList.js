@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
-//class
+import React, { Component } from 'react';
+
 class GuestList extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <h2>hello from GuestList component</h2>
-        <p>GuestList props:{JSON.stringify(this.props)}</p>
+                {/* <p>GuestList props:{JSON.stringify(this.props)}</p> */}
             </div>
         )//end return
     }//end render

@@ -6,7 +6,6 @@ import GuestList from '../GuestList/GuestList.js'
 import DinnerSupplies from '../DinnerSupplies/DinnerSupplies.js'
 import GuestForm from '../GuestForm/GuestForm';
 
-
 class App extends Component {
   state = {
     guestList: [],

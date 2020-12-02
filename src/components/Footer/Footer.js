@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
-//class
+import React, { Component } from 'react';
+
 class Footer extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <h2>hello from Footer component</h2>
-        <p>Footer props:{JSON.stringify(this.props)}</p>
+                {/* <p>Footer props:{JSON.stringify(this.props)}</p> */}
             </div>
         )//end return
     }//end render
